@@ -29,8 +29,10 @@
 
                 
                     <h1>Lista Mail Randomica</h1>
+
+                    <button class="btn btn-outline-secondary my-3" type="button" @click="aggiornaLista">Aggiorna Lista</button>
                 
-                    <ul v-if="(emails.length >= 10)" class="list-group list-group-flush rounded-3 py-5">
+                    <ul v-if="(emails.length >= 10)" class="list-group list-group-flush rounded-3 py-2">
                         
                         <li  class="list-group-item" v-for="mail in emails">
                             {{mail}}
@@ -40,7 +42,8 @@
 
                 </div>
 
-            </div>
+            </div> 
+            
         </div>
 
     </div> <!-- fine app-->
